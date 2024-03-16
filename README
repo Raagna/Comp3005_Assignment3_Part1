@@ -20,3 +20,5 @@ INSERT INTO students (first_name, last_name, email, enrollment_date) VALUES
 Then in the Java main file of your Java project, you will find 5 functions one of them is the main function and the rest are the respective functions
 (SELECT, INSERT, UPDATE, DELETE)
 to run the file right-click and select run main all changes are displayed in your terminal if the select function is used last
+
+youtube link: https://www.youtube.com/watch?v=80e2DE-ysXc 
