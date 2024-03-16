@@ -1,8 +1,22 @@
 
-Download Copy the maven for JDSBC and input it as a dependecy in the pom.xml file in your java project
-In Pgadmin4 create a database by right clicking database and then clicking Create
-then assign a name for your database, when finished right click your database and then click querytool
-after you fill the database in by using the insert command
-Then in the java main file of your java project you will find 5 functions one of them is the main function and the rest are the respective functions
+Download Copy the maven for JDSBC and input it as a dependency in the pom.xml file in your java project
+In Pgadmin4 create a database by right-clicking database and then clicking Create
+then assign a name for your database, when finished right click your database and then click query tool
+Create a table, I used this command:
+CREATE TABLE IF NOT EXISTS students (
+    student_id SERIAL PRIMARY KEY,
+    first_name TEXT NOT NULL,
+	last_name TEXT NOT NULL,
+    email TEXT NOT NULL UNIQUE,
+    enrollment_date Date
+);
+
+after filling the database in by using the insert command I used:
+INSERT INTO students (first_name, last_name, email, enrollment_date) VALUES
+('John', 'Doe', 'john.doe@example.com', '2023-09-01'),
+('Jane', 'Smith', 'jane.smith@example.com', '2023-09-01'),
+('Jim', 'Beam', 'jim.beam@example.com', '2023-09-02');
+
+Then in the Java main file of your Java project, you will find 5 functions one of them is the main function and the rest are the respective functions
 (SELECT, INSERT, UPDATE, DELETE)
-to run the file right click and select run main all changes are displayed in your terminal if the select function is used last
+to run the file right-click and select run main all changes are displayed in your terminal if the select function is used last
